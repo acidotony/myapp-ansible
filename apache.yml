@@ -8,7 +8,7 @@
          - key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
            state: present
   roles:
-    - { role: GROG.authorized-key }
+  - { role: GROG.authorized-key }
   become: True
   tasks:
     - name: Install packages
