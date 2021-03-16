@@ -1,13 +1,6 @@
 ---
 - hosts: webservers 
-  remote_user: ansible
-  vars:
-    authorized_key_list:
-    - name: tonymac
-      authorized_keys:
-         - key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
-           state: present
-
+  
   become: True
   tasks:
     - name: Install packages
