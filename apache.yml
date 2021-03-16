@@ -1,6 +1,6 @@
 ---
 - hosts: webservers 
-  remote user : ansible
+  remote_user : ansible
   become: True
   tasks:
     - name: Install packages
