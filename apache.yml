@@ -1,7 +1,7 @@
 ---
 - hosts: webservers 
-  remote_user : ansible
-  become: True
+  remote_user : tonymac2
+  become: Yes
   tasks:
     - name: Install packages
       yum:
